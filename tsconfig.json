@@ -14,6 +14,7 @@
     "sourceMap": true,
     "allowSyntheticDefaultImports": true,
     "resolveJsonModule": true,
+    "preserveConstEnums": true,
     "types": ["node"]
   },
   "include": [

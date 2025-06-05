@@ -25,10 +25,10 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "build": "tsc",
-    "dev": "tsc --watch",
+    "build": "tsup",
+    "dev": "tsup --watch",
     "start": "node build/index.js",
-    "release": "pnpm publish --access public"
+    "release": "pnpm build && pnpm publish --access public"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1"
@@ -36,6 +36,7 @@
   "devDependencies": {
     "@liou666/eslint-config-flat": "^2.0.2",
     "@types/node": "^22.15.29",
+    "tsup": "^8.5.0",
     "typescript": "^5.8.3"
   }
 }

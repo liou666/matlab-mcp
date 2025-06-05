@@ -1,7 +1,7 @@
 import * as fs from 'fs'
 import * as path from 'path'
-import { Server } from '@modelcontextprotocol/sdk/server/index'
-import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio'
+import { Server } from '@modelcontextprotocol/sdk/server/index.js'
+import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
 import {
   CallToolRequestSchema,
   ErrorCode,
@@ -9,7 +9,7 @@ import {
   ListToolsRequestSchema,
   McpError,
   ReadResourceRequestSchema,
-} from '@modelcontextprotocol/sdk/types'
+} from '@modelcontextprotocol/sdk/types.js'
 
 import MatlabHandler from './handler'
 
