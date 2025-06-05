@@ -28,7 +28,7 @@
     "build": "tsc",
     "dev": "tsc --watch",
     "start": "node build/index.js",
-    "prepublishOnly": "pnpm run build"
+    "release": "pnpm publish --access public"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.12.1"
