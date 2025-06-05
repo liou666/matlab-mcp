@@ -1,0 +1,50 @@
+# Source files
+src/
+tsconfig.json
+
+# Development files
+node_modules/
+pnpm-lock.yaml
+
+# Environment variables
+.env*
+
+# Logs
+logs
+*.log
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git files
+.git/
+.gitignore
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+.tmp/
+
+# MATLAB temporary files
+*.m~
+*.asv
+
+# Test files
+test/
+tests/
+*.test.js
+*.test.ts 

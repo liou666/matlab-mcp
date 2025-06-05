@@ -1,0 +1,41 @@
+{
+  "name": "matlab-mcp",
+  "type": "module",
+  "version": "0.1.0",
+  "packageManager": "pnpm@10.10.0",
+  "description": "MATLAB MCP Server - Execute MATLAB code through Model Context Protocol",
+  "author": "liou666",
+  "license": "MIT",
+  "keywords": [
+    "matlab",
+    "mcp",
+    "model-context-protocol",
+    "ai"
+  ],
+  "main": "build/index.js",
+  "bin": {
+    "matlab-mcp": "./build/index.js"
+  },
+  "files": [
+    "build/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "start": "node build/index.js",
+    "prepublishOnly": "pnpm run build"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "@liou666/eslint-config-flat": "^2.0.2",
+    "@types/node": "^22.15.29",
+    "typescript": "^5.8.3"
+  }
+}
