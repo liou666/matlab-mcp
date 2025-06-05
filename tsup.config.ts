@@ -6,9 +6,11 @@ export default defineConfig({
   outDir: 'build',
   target: 'es2020',
   platform: 'node',
-  sourcemap: true,
+  sourcemap: false,
   dts: true,
   clean: true,
+  minify: true,
+  treeshake: true,
   banner: {
     js: '#!/usr/bin/env node',
   },
